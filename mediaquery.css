@@ -1,0 +1,105 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    height:100vh;
+
+    background-color:#111;
+
+    font-family:Arial, sans-serif;
+}
+
+/* Bulb */
+
+.bulb{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background-color:gray;
+
+    transition:0.5s;
+
+    box-shadow:none;
+}
+
+/* Bulb ON */
+
+.bulb.on{
+
+    background-color:yellow;
+
+    box-shadow:
+    0 0 20px yellow,
+    0 0 40px yellow,
+    0 0 60px yellow;
+}
+
+/* Buttons */
+
+.buttons{
+
+    margin-top:30px;
+}
+
+button{
+
+    padding:12px 25px;
+
+    margin:10px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:0.3s;
+}
+
+/* Hover Effect */
+
+button:hover{
+
+    transform:scale(1.05);
+}
+
+/* Media Query */
+
+@media (max-width:768px){
+
+    .bulb{
+
+        width:120px;
+
+        height:120px;
+    }
+
+    button{
+
+        width:120px;
+
+        font-size:16px;
+    }
+}
