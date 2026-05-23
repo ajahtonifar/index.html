@@ -1,40 +1,73 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
+    <title>TONIFAR HUB</title>
 
-    <title>Bulb ON and OFF</title>
-
-    <link rel="stylesheet"
-    href="mediaquery.css">
-
+    <link rel="stylesheet" href="mediaquery.css">
 </head>
 
 <body>
 
-    <!-- Bulb -->
+    <!-- HEADER -->
+    <header>
+        <div class="logo-section">
+            <img src="logo.jpg" alt="Logo">
+            <h2>TONIFAR HUB</h2>
+        </div>
 
-    <div class="bulb" id="bulb"></div>
+        <nav>
+            <ul>
+                <li><a href="mediaquery.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Buttons -->
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>WELCOME TO AJAH JUNIOR TONIFAR HUB</h1>
+        <p>
+            Learn HTML, CSS, JavaScript and C++ with Griffin Hub.
+        </p>
+    </section>
 
-    <div class="buttons">
+    <!-- BULB SECTION -->
+    <section class="bulbs">
 
-        <button onclick="turnOn()">
-            ON
-        </button>
+        <div class="bulb" id="bulb"></div>
 
-        <button onclick="turnOff()">
-            OFF
-        </button>
+        <div class="buttons">
+            <button onclick="turnOn()">ON</button>
+            <button onclick="turnOff()">OFF</button>
+        </div>
 
-    </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            You can get more videos on HTML, CSS and JavaScript.
+        </p>
+
+        <div class="youtube">
+            <a href="#">
+                <img src="logo.jpg" alt="Youtube Logo">
+            </a>
+        </div>
+
+        <p>
+            Contact us via <a href="#">Gmail</a>
+        </p>
+
+    </footer>
 
     <script src="mediaquery.js"></script>
 

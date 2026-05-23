@@ -1,4 +1,4 @@
-/* Reset */
+/* RESET */
 
 *{
     margin:0;
@@ -6,100 +6,184 @@
     box-sizing:border-box;
 }
 
-/* Body */
+/* BODY */
 
 body{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    flex-direction:column;
-
-    height:100vh;
-
-    background-color:#111;
-
-    font-family:Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0f172a;
+    color:white;
 }
 
-/* Bulb */
+/* HEADER */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:#111827;
+    box-shadow:0 2px 10px rgba(0,0,0,0.5);
+}
+
+/* LOGO */
+
+.logo-section{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-section img{
+    width:70px;
+    height:70px;
+    border-radius:12px;
+}
+
+/* NAVIGATION */
+
+nav ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* HERO SECTION */
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    color:#cbd5e1;
+}
+
+/* BULB SECTION */
+
+.bulbs{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:80px 20px;
+}
+
+/* BULB */
 
 .bulb{
-
     width:180px;
-
     height:180px;
-
     border-radius:50%;
-
-    background-color:gray;
-
+    background:gray;
     transition:0.5s;
-
-    box-shadow:none;
 }
 
-/* Bulb ON */
+/* BULB ON */
 
 .bulb.on{
-
-    background-color:yellow;
+    background:yellow;
 
     box-shadow:
     0 0 20px yellow,
     0 0 40px yellow,
-    0 0 60px yellow;
+    0 0 60px yellow,
+    0 0 100px yellow;
 }
 
-/* Buttons */
+/* BUTTONS */
 
 .buttons{
-
     margin-top:30px;
 }
 
 button{
-
-    padding:12px 25px;
-
+    padding:14px 35px;
     margin:10px;
-
     border:none;
-
-    border-radius:8px;
-
+    border-radius:10px;
     cursor:pointer;
-
     font-size:18px;
-
+    font-weight:bold;
     transition:0.3s;
 }
 
-/* Hover Effect */
+/* BUTTON HOVER */
 
 button:hover{
-
     transform:scale(1.05);
 }
 
-/* Media Query */
+/* FIRST BUTTON */
 
-@media (max-width:768px){
+button:first-child{
+    background:#22c55e;
+    color:white;
+}
+
+/* SECOND BUTTON */
+
+button:last-child{
+    background:#ef4444;
+    color:white;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:40px 20px;
+    background:#111827;
+    margin-top:40px;
+}
+
+.youtube img{
+    width:80px;
+    height:80px;
+    border-radius:12px;
+    margin:20px 0;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
 
     .bulb{
-
         width:120px;
-
         height:120px;
     }
 
     button{
-
         width:120px;
-
-        font-size:16px;
     }
 }

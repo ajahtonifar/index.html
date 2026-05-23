@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>People Counter</title>
+
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>PEOPLE ENTERED</h1>
+        </header>
+
+        <!-- Counter Number -->
+        <h2 id="number">0</h2>
+
+        <div class="list-group">
+
+            <!-- Increment Button -->
+            <button id="b1" onclick="increment()">
+                Increment
+            </button>
+
+            <!-- Decrement Button -->
+            <button id="b2" onclick="decrement()">
+                Decrement
+            </button>
+
+            <!-- Save Button -->
+            <button id="b3" onclick="saveEntry()">
+                Save
+            </button>
+
+        </div>
+
+        <!-- Saved Entries -->
+        <p id="save">
+            Previous Entries:
+        </p>
+
+    </div>
+
+    <script src="mediaquery.js"></script>
+
+</body>
+
+</html>
